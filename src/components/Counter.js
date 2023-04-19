@@ -7,10 +7,12 @@ export default function Counter() {
 
     // const count = 0 //takes away error
 
-    const count = useSelector(state => {
-        console.log(state)
-        return state.counter.count
-    })
+    // const count = useSelector(state => {
+    //     console.log(state)
+    //     return state.counter.count
+    // })
+    
+    const count =useSelector(state => state.counter.count)
     return (
         <div>
             <h1> Count is {count}</h1>
