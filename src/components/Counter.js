@@ -5,22 +5,19 @@ import { useSelector } from "react-redux"
 export default function Counter() {
     // const [count, setCount] = useState(0)
 
-    const count = 0 //takes away error
+    // const count = 0 //takes away error
 
-    const count2 = useSelector(state => {
+    const count = useSelector(state => {
         console.log(state)
+        return state.counter.count
     })
     return (
         <div>
             <h1> Count is {count}</h1>
-            <button onClick={() => {
-                setCount(count + 1)
-            }}>Increment</button>
+            <button>Increment</button>
 
 
-            <button onClick={() => {
-                setCount(count - 1)
-            }}>Decrement</button>
+            <button>Decrement</button>
         </div>
     )
 }
