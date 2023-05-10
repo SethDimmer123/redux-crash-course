@@ -29,7 +29,7 @@ export const counterSlice = createSlice({// 4. this createSlice function takes i
     state.count -= 1
 },
     incrementByAmount: (state, action) => {
-      state.count += action.payload
+      state.count += action.payload// this payload property i am passing in my function is how much i want to increment by 
     },
   },
 })
